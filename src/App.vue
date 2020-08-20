@@ -34,12 +34,14 @@ export default {
   }),
 
   methods: {
-    handleScroll: function(evt, el) {
-      if (el.getBoundingClientRect().top > 50) {
-        el.setAttribute("style", "opacity: 1; transform: translate3d(0, -10px, 0)")
-      }
-      return el.getBoundingClientRect().top > 100;
-    }
+    // handleScroll(evt, el) {
+    //   console.log("scroll")
+    //   if (el.getBoundingClientRect().top < 550) {
+    //     console.log(el)
+    //     // el.setAttribute("style", "color: red")
+    //   }
+    //   return el.getBoundingClientRect().top > 100;
+    // }
   }
 };
 </script>

@@ -1,5 +1,7 @@
 <template>
   <div class="about">
+
+
     <section id="about-me">
       <div class="py-12"></div>
 
@@ -53,7 +55,7 @@
       <div class="py-12"></div>
     </section>
 
-
+<!--образование-->
 
     <section style="background-color: #eeeeee">
       <div class="py-12"></div>
@@ -90,10 +92,9 @@
       <div class="py-12"></div>
     </section>
 
-
+<!--подходы-->
     <section>
       <div class="py-12"></div>
-
 
       <v-container>
         <h2 class="display-2 font-weight-bold mb-3 text-uppercase text-center">Основные подходы в психотерапии</h2>
@@ -122,3 +123,13 @@
     </section>
   </div>
 </template>
+
+
+
+
+
+<style>
+  .v-application a{
+    text-decoration: none;
+  }
+</style>
