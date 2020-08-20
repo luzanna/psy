@@ -17,3 +17,5 @@ jobs:
           ls -la
           cd psy
           git pull
+          npm install
+          npm run build
