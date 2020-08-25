@@ -1,7 +1,8 @@
 <template>
   <div>
+
 <!--    основной экран-->
-        <section id="welcome" class="overflow-hidden">
+    <section id="welcome" class="overflow-hidden">
           <div class="row no-gutters">
 
             <!--            Большой экран-->
@@ -184,8 +185,6 @@
             </transition>
 <!--            </div>-->
           </div>
-
-
 
 
         </v-responsive>
@@ -566,6 +565,7 @@ export default {
     },
 
     headerScroll(evt, el) {
+      console.log(el.getBoundingClientRect().top)
 
       if (el.getBoundingClientRect().top < 550) {
         document.documentElement.clientWidth > 960 ?
@@ -591,7 +591,7 @@ export default {
 <style scoped>
 
   .slide-fade-enter-active {
-    transition: all .5s ease;
+    transition: all .8s ease;
   }
   .slide-fade-leave-active {
     transition: all 1s cubic-bezier(1.0, 0.5, 0.8, 1.0);
@@ -603,7 +603,7 @@ export default {
   }
 
   .slide-fade-up-enter-active {
-    transition: all .5s ease;
+    transition: all .8s ease;
   }
   .slide-fade-up-leave-active {
     transition: all 1s cubic-bezier(1.0, 0.5, 0.8, 1.0);
