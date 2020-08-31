@@ -178,7 +178,7 @@
 <script>
 
   import pdf from  'vue-pdf'
-  // var loadingTask = pdf.createLoadingTask('pdf/Diploma.pdf');
+  var loadingTask = pdf.createLoadingTask('pdf/Diploma.pdf');
 
 
 
@@ -196,7 +196,7 @@
         pageCount: 0,
 
 
-        // src: loadingTask,
+        src: loadingTask,
         numPages: undefined,
 
 
@@ -224,6 +224,7 @@
 
     mounted() {
       this.src.promise.then(pdf => {
+
         this.numPages = pdf.numPages;
       });
     },
