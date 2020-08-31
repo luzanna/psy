@@ -94,19 +94,44 @@
             ></h3>
 
 
-            <object style="overflow: scroll" type="application/pdf" width="100%" height="500vh"
-                    v-bind:data="src">
-              <iframe scrolling="auto" width="100%" height="100%" style="border: none;"
-                      v-bind:src="src">
-                This browser does not support PDFs. Please download the PDF to view it:
-                <a v-bind:href="src" style="overflow: scroll">Download PDF</a>
-              </iframe>
-            </object>
+<!--            <object style="overflow: scroll" type="application/pdf" width="100%" height="500vh"-->
+<!--                    v-bind:data="src">-->
+<!--              <iframe scrolling="auto" width="100%" height="100%" style="border: none;"-->
+<!--                      v-bind:src="src">-->
+<!--                This browser does not support PDFs. Please download the PDF to view it:-->
+<!--                <a v-bind:href="src" style="overflow: scroll">Download PDF</a>-->
+<!--              </iframe>-->
+<!--            </object>-->
+
+
+            <div style="overflow: scroll; height: 80vh" >
+              <pdf
+                      v-for="i in numPages"
+                      :key="i"
+                      :src="src"
+                      :page="i"
+                      style="display: flex; width: 100%; flex-direction: column;"
+              ></pdf>
+            </div>
+
+
 
             <div
                     class="title font-weight-light mb-5 text-left"
                     v-text="text"
             ></div>
+
+
+
+
+
+
+
+
+
+
+
+
 
           </v-col>
         </v-row>
@@ -151,10 +176,31 @@
 </template>
 
 <script>
+
+  import pdf from  'vue-pdf'
+  var loadingTask = pdf.createLoadingTask('pdf/Diploma.pdf');
+
+
+
   export default {
     name: 'About',
+    components: {
+      pdf
+    },
     data() {
       return {
+
+
+
+        currentPage: 0,
+        pageCount: 0,
+
+
+        src: loadingTask,
+        numPages: undefined,
+
+
+
         articles: [
           {
             src: 'pdf/Diploma.pdf',
@@ -174,6 +220,13 @@
         ],
 
       }
+    },
+
+    mounted() {
+      this.src.promise.then(pdf => {
+
+        this.numPages = pdf.numPages;
+      });
     },
 
   }

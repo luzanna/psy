@@ -6,27 +6,37 @@
             </svg>
         </router-link>
 
-        <input id="hamburger" class="hamburger" type="checkbox"/>
+        <input id="hamburger" class="hamburger" type="checkbox" v-model="checked"/>
         <label class="hamburger" for="hamburger">
             <i></i>
         </label>
         <section class="drawer-list">
             <ul>
-                <li><router-link class="link" to="/">Главная</router-link></li>
-                <li> <router-link class="link" to="/about">Обо мне</router-link></li>
-                <li><router-link class="link" to="/sign_up">Записаться на консультацию</router-link></li>
-                <li> <router-link class="link" to="/contact">Контакты</router-link></li>
+                <li @click="closeMenu"><router-link class="link" to="/">Главная</router-link></li>
+                <li @click="closeMenu"> <router-link class="link" to="/about">Обо мне</router-link></li>
+                <li @click="closeMenu"><router-link class="link" to="/sign_up">Записаться на консультацию</router-link></li>
+                <li @click="closeMenu"> <router-link class="link" to="/contact">Контакты</router-link></li>
             </ul>
         </section>
     </div>
 </template>
 
 <script>
+
+
+
     export default {
         name: "Menu",
+        data() {
+            return{
+                checked: false
+            }
+        },
         methods: {
-
-        }
+            closeMenu(){
+                this.checked = false
+            }
+      }
     }
 </script>
 
