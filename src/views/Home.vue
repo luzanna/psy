@@ -465,6 +465,7 @@ export default {
       }
     }
     window.addEventListener('scroll', f)
+        // el.setAttribute('style', 'color: red')
   }
           // el.setAttribute('style', 'color: red')
     // }

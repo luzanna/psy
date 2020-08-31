@@ -6,7 +6,12 @@
       <div class="py-12"></div>
 
       <v-container class="text-center">
-        <h2 class="display-2 font-weight-bold text-uppercase mb-3">Почему я стала заниматься психологией</h2>
+
+
+        <h2 class="hidden-sm-and-down display-2 font-weight-bold text-uppercase mb-3">Почему я стала заниматься психологией</h2>
+
+        <h2 class=" hidden-md-and-up display-1 font-weight-bold text-uppercase text-center mb-3">Почему я стала заниматься психологией</h2>
+
 
         <v-responsive
                 class="mx-auto mb-8"
@@ -61,7 +66,9 @@
       <div class="py-12"></div>
 
       <v-container class="text-center">
-        <h2 class="display-2 font-weight-bold mb-3 text-uppercase">Образование и дипломы</h2>
+        <h2 class="hidden-sm-and-down  display-2 font-weight-bold mb-3 text-uppercase">Образование и дипломы</h2>
+
+        <h2 class="hidden-md-and-up  display-1 font-weight-bold mb-3 text-uppercase">Образование и дипломы</h2>
 
         <v-responsive
                 class="mx-auto mb-12"
@@ -87,12 +94,12 @@
             ></h3>
 
 
-            <object type="application/pdf" width="100%" height="500vh"
+            <object style="overflow: scroll" type="application/pdf" width="100%" height="500vh"
                     v-bind:data="src">
-              <iframe width="100%" height="100%" style="border: none;"
+              <iframe scrolling="auto" width="100%" height="100%" style="border: none;"
                       v-bind:src="src">
                 This browser does not support PDFs. Please download the PDF to view it:
-                <a v-bind:href="src">Download PDF</a>
+                <a v-bind:href="src" style="overflow: scroll">Download PDF</a>
               </iframe>
             </object>
 
@@ -109,12 +116,14 @@
       <div class="py-12"></div>
     </section>
 
-<!--подходы-->
+    <!--подходы-->
     <section>
       <div class="py-12"></div>
 
       <v-container>
-        <h2 class="display-2 font-weight-bold mb-3 text-uppercase text-center">Основные подходы в психотерапии</h2>
+        <h2 class="hidden-sm-and-down display-2 font-weight-bold mb-3 text-uppercase text-center">Основные подходы в психотерапии</h2>
+        <h2 class="hidden-md-and-up  display-1 font-weight-bold mb-3 text-uppercase text-center">Основные подходы в психотерапии</h2>
+
 
         <v-responsive
                 class="mx-auto mb-12"
@@ -165,7 +174,8 @@
         ],
 
       }
-    }
+    },
+
   }
 </script>
 
