@@ -6,11 +6,11 @@
             </svg>
         </router-link>
 
-        <input id="hamburger" class="hamburger" type="checkbox" v-model="checked"/>
-        <label class="hamburger" for="hamburger">
+        <input id="hamburger" class="hamburger"  type="checkbox" v-model="checked"/>
+        <label @mouseover="appearMenu" ref="menu" class="hamburger" for="hamburger">
             <i></i>
         </label>
-        <section class="drawer-list">
+        <section @mouseleave="closeMenu" class="drawer-list">
             <ul>
                 <li @click="closeMenu"><router-link class="link" to="/">Главная</router-link></li>
                 <li @click="closeMenu"> <router-link class="link" to="/about">Обо мне</router-link></li>
@@ -35,6 +35,11 @@
         methods: {
             closeMenu(){
                 this.checked = false
+            },
+
+            appearMenu(){
+                if (this.$refs.menu.hasAttribute('class', "hover"))
+                    this.checked = true
             }
       }
     }
