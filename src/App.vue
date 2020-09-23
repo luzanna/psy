@@ -144,7 +144,7 @@ export default {
 
 
   /*стили для timeline from home.vue*/
-  
+
  /*оставить один вариант!!!*/
 
   /*carusel right*/

@@ -1491,7 +1491,7 @@ export default {
     }
     .card-decor-left{
         color: white;
-        background: rgba(255, 255, 255, 0.19);
+        background: rgba(255, 255, 255, 0.19) !important;
         margin-left: calc(20% - 8px);
     }
     .card-decor-mobile-left{
