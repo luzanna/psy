@@ -4,10 +4,11 @@ import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify';
 
+
 Vue.config.productionTip = false
 
 
-
+//
 // Vue.directive('scroll', {
 //   inserted: function(el, binding) {
 //     let f = function (evt) {

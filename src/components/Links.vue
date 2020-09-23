@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <v-row >
-            <v-col class="text-left">
+            <v-col :class="[isActive ? scrollClass : '', activeClass]" >
                 <v-responsive
                         class="mx-auto title font-weight-light mb-8"
                         max-width="720"
@@ -31,12 +31,7 @@
 
             </v-col>
         </v-row>
-
-
-
-
-
-<!--            <router-link class="link" to="/">Главная</router-link>-->
+<!--        <router-link class="link" to="/">Главная</router-link>-->
 <!--        <router-link class="link" to="/about">Обо мне</router-link>-->
 <!--        <router-link class="link" to="/sign_up">Записаться на консультацию</router-link>-->
 <!--        <router-link class="link" to="/contact">Контакты</router-link>-->
@@ -45,7 +40,24 @@
 
 <script>
     export default {
-        name: "Links"
+        name: "Links",
+        data() {
+            return {
+                isActive: false,
+                activeClass: 'text-left',
+                scrollClass: 'text-center'
+            }
+        },
+        methods: {
+            getWidth(){
+                let windowWidth = document.documentElement.clientWidth
+                if (windowWidth < 425)
+                    this.isActive = true
+            }
+        },
+        mounted() {
+            this.getWidth()
+        }
     }
 </script>
 
@@ -59,12 +71,17 @@
         text-decoration: none;
         transition: 0.1s linear;
         font-size: 1em;
-        /*font-weight: bold;*/
         color: white;
+        margin-left: 1.5em;
         /*text-transform: uppercase;*/
-        margin: 1em;
     }
     .link:hover{
         color: #d6d6d6;
     }
+
+    /*@media screen and (max-width: 425px){*/
+    /*    v-col {*/
+    /*        text-align: center;*/
+    /*    }*/
+    /*}*/
 </style>

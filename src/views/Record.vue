@@ -177,9 +177,6 @@
             validate () {
                 this.$refs.form.validate()
             },
-            reset () {
-                this.$refs.form.reset()
-            },
             sendData(){
                 let dataForm = {
                     username: this.name,
@@ -188,9 +185,22 @@
                     wayOfCommunicate: this.communicate,
                     problem: this.problem,
                 }
-                let result = JSON.stringify(dataForm);
+
+                let res = JSON.stringify(dataForm);
                 // this.getRequest();
-                alert(result)
+                alert(res);
+
+
+                // let response = await fetch('http://localhost:8080/sign_up', {
+                //     method: 'POST',
+                //
+                //     body: JSON.stringify(dataForm)
+                // });
+                //
+                // let result = await response.json();
+                // alert(result.message);
+
+
             }
         },
 
@@ -204,4 +214,6 @@
         margin: auto;
         padding: 1em;
     }
+
+
 </style>

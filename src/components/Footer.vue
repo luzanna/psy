@@ -36,7 +36,7 @@
 
 
             <v-col>
-                <v-responsive class="mt-10">
+                <v-responsive class="mt-10 justify-center">
                     <Links/>
                 </v-responsive>
 

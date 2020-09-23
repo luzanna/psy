@@ -6,11 +6,11 @@
             </svg>
         </router-link>
 
-        <input id="hamburger" class="hamburger"  type="checkbox" v-model="checked"/>
+        <input id="hamburger"  class="hamburger"  type="checkbox" v-model="checked"/>
         <label @mouseover="appearMenu" ref="menu" class="hamburger" for="hamburger">
             <i></i>
         </label>
-        <section @mouseleave="closeMenu" class="drawer-list">
+        <section @mouseleave="closeMenu" ref="drawerlist" class="drawer-list">
             <ul>
                 <li @click="closeMenu"><router-link class="link" to="/">Главная</router-link></li>
                 <li @click="closeMenu"> <router-link class="link" to="/about">Обо мне</router-link></li>
@@ -18,6 +18,65 @@
                 <li @click="closeMenu"> <router-link class="link" to="/contact">Контакты</router-link></li>
             </ul>
         </section>
+
+
+
+<!--        <v-sheet-->
+<!--                height="100vh"-->
+<!--                width="100vw"-->
+<!--                style="position: fixed; z-index: 2; background: none"-->
+<!--        >-->
+<!--            <v-container class="fill-height">-->
+<!--                <v-row-->
+<!--                        align="center"-->
+<!--                        justify="end"-->
+<!--                >-->
+<!--                    <v-btn-->
+<!--                            dark-->
+<!--                            @click.stop="drawer = !drawer"-->
+<!--                    >-->
+<!--                        menu-->
+<!--                    </v-btn>-->
+<!--                </v-row>-->
+<!--            </v-container>-->
+
+<!--            <v-navigation-drawer-->
+<!--                    v-model="drawer"-->
+<!--                    absolute-->
+<!--                    bottom-->
+<!--                    temporary-->
+<!--            >-->
+<!--                <v-list dense-->
+<!--                        nav-->
+<!--                        v-model="group"-->
+<!--                >-->
+<!--                    <v-list-item>-->
+<!--                        <v-list-item-title>-->
+<!--                            <router-link class="link" to="/">Главная</router-link>-->
+<!--                        </v-list-item-title>-->
+<!--                    </v-list-item>-->
+
+<!--                    <v-list-item>-->
+<!--                        <v-list-item-title>-->
+<!--                            <router-link class="link" to="/about">Обо мне</router-link>-->
+<!--                        </v-list-item-title>-->
+<!--                    </v-list-item>-->
+
+<!--                    <v-list-item>-->
+<!--                        <v-list-item-title>-->
+<!--                            <router-link class="link" to="/sign_up">Записаться на консультацию</router-link>-->
+<!--                        </v-list-item-title>-->
+<!--                    </v-list-item>-->
+
+<!--                    <v-list-item>-->
+<!--                        <v-list-item-title>-->
+<!--                            <router-link class="link" to="/contact">Контакты</router-link>-->
+<!--                        </v-list-item-title>-->
+<!--                    </v-list-item>-->
+<!--                </v-list>-->
+<!--            </v-navigation-drawer>-->
+<!--        </v-sheet>-->
+
     </div>
 </template>
 
@@ -29,8 +88,18 @@
         name: "Menu",
         data() {
             return{
-                checked: false
+                checked: false,
+
+
+                drawer: false,
+                group: null,
+
             }
+        },
+        watch: {
+            group () {
+                this.drawer = false
+            },
         },
         methods: {
             closeMenu(){
@@ -38,10 +107,10 @@
             },
 
             appearMenu(){
-                if (this.$refs.menu.hasAttribute('class', "hover"))
+                if (this.$refs.menu.hasAttribute('class', "hover") || this.$refs.drawerlist.hasAttribute('class', "hover"))
                     this.checked = true
             }
-      }
+      },
     }
 </script>
 
@@ -58,24 +127,6 @@
 
     }
 
-
-
-
-
-
-
-
-    /*html {*/
-    /*    font-family: 'Lato', sans-serif;*/
-    /*}*/
-
-    /*body {*/
-    /*    margin: 0;*/
-    /*    overflow-x: hidden;*/
-    /*    height: 100vh;*/
-    /*    width: 100vw;*/
-    /*}*/
-
     ul {
         list-style: none;
         margin: 0;
@@ -91,7 +142,7 @@
         top: 0;
         height: 100vh;
         width: 100vw;
-        z-index: 9998;
+        z-index: 1  ;
         transform: translate(100vw, 0);
         /* ie workaround */
         -ms-transform: translatex(-100vw);
@@ -123,7 +174,7 @@
         pointer-events: auto;
         /*white-space: nowrap;*/
         box-sizing: border-box;
-        transform: translatex(100vw);
+        transform: translate(100vw);
         /* ie workaround */
         -ms-transform: translatex(-100vw);
     }
@@ -184,7 +235,9 @@
     }
 
     label.hamburger {
-        z-index: 9999;
+        /*z-index: 9999;*/
+        z-index: 2;
+
         position: relative;
         display: block;
         height: 50px;

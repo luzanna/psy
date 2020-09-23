@@ -62,9 +62,14 @@
                                 class="subtitle-1"
                                 v-text="text"
                         >
+
                         </v-card-text>
                     </v-card>
                 </v-col>
+
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Abbd0e806c45661d745de7715f93f82227a7ad34a60bc18fc11dfb91f8ff68a68&amp;source=constructor"
+                        width="500" height="400" frameborder="0"></iframe>
+
             </v-row>
         </v-container>
 
