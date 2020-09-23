@@ -144,12 +144,8 @@ export default {
 
 
   /*стили для timeline from home.vue*/
-
-  .theme--dark.v-card {
-    background: none;
-  }
-  /* background-color: #1e1e1e;
-/*оставить один вариант!!!*/
+  
+ /*оставить один вариант!!!*/
 
   /*carusel right*/
 
