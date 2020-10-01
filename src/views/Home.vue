@@ -930,16 +930,9 @@
 
           <v-container>
 
+              <h1 class="hidden-sm-and-down display-2 font-weight-bold mb-3 text-uppercase text-center">   Как проходят консультации </h1>
 
-<!--              <div  ref="thirdheader">-->
-<!--                  <div v-scroll="headerScroll">-->
-<!--                      <transition name="slide-fade">-->
-<!--                          <div v-if="show">-->
-                              Как проходят консультации
-<!--                          </div>-->
-<!--                      </transition>-->
-<!--                  </div>-->
-<!--              </div>-->
+              <h1 class="hidden-md-and-up display-1 font-weight-bold text-uppercase text-center mb-3">   Как проходят консультации </h1>
 
               <v-responsive
                       class="mx-auto mb-12"
@@ -982,7 +975,7 @@
               :cycle="cycle"
               :interval="4000"
               :show-arrows-on-hover="true"
-              :vertical="true"
+              :vertical="false"
               hide-delimiter-background
               delimiter-icon="mdi-circle-medium"
               height="100vh"
@@ -1046,7 +1039,7 @@
               :cycle="cycle"
               :interval="4000"
               :show-arrows-on-hover="true"
-              :vertical="true"
+              :vertical="false"
               hide-delimiter-background
               delimiter-icon="mdi-circle-medium"
               height="100vh"
@@ -1475,7 +1468,7 @@ export default {
 
     .card-decor{
         color: white;
-        background: rgba(255, 255, 255, 0.09);
+        background: rgba(255, 255, 255, 0.19) !important;
         margin-right: calc(13% - 8px);
     }
 
@@ -1509,19 +1502,6 @@ export default {
 
 
     /*left version*/
-
-
-
-
-    /*.theme--light.v-timeline::before {*/
-    /*    background: #cfb1ad;*/
-    /*    width: 1px;*/
-    /*}*/
-
-
-
-
-
 
 
 

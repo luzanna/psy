@@ -1,5 +1,4 @@
 <template>
-    <div class="container">
         <v-row >
             <v-col :class="[isActive ? scrollClass : '', activeClass]" >
                 <v-responsive
@@ -28,14 +27,8 @@
                     <router-link class="link" to="/contact">Контакты</router-link>
                 </v-responsive>
 
-
             </v-col>
         </v-row>
-<!--        <router-link class="link" to="/">Главная</router-link>-->
-<!--        <router-link class="link" to="/about">Обо мне</router-link>-->
-<!--        <router-link class="link" to="/sign_up">Записаться на консультацию</router-link>-->
-<!--        <router-link class="link" to="/contact">Контакты</router-link>-->
-    </div>
 </template>
 
 <script>
@@ -62,26 +55,13 @@
 </script>
 
 <style scoped>
-    .container{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
     .link{
         text-decoration: none;
         transition: 0.1s linear;
         font-size: 1em;
         color: white;
-        margin-left: 1.5em;
-        /*text-transform: uppercase;*/
     }
     .link:hover{
         color: #d6d6d6;
     }
-
-    /*@media screen and (max-width: 425px){*/
-    /*    v-col {*/
-    /*        text-align: center;*/
-    /*    }*/
-    /*}*/
 </style>

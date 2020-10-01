@@ -6,7 +6,8 @@
             </svg>
         </router-link>
 
-        <input id="hamburger"  class="hamburger"  type="checkbox" v-model="checked"/>
+
+        <input id="hamburger" class="hamburger" type="checkbox" v-model="checked"/>
         <label @mouseover="appearMenu" ref="menu" class="hamburger" for="hamburger">
             <i></i>
         </label>

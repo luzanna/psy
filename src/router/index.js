@@ -5,7 +5,12 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
   const routes = [
-  {
+    {
+      path: '*',
+      component: () => import('../components/404.vue')
+    },
+
+    {
     path: '/',
     name: 'Home',
     component: () => import('../views/Home.vue')
@@ -29,6 +34,11 @@ Vue.use(VueRouter)
       path: '/contact',
       name: 'Contact',
       component: () => import('../views/Contacts.vue')
+    },
+    {
+      path: '/successful_entry',
+      name: 'SuccessfulEntry',
+      component: () => import('../views/SuccessfulEntry.vue')
     },
 ]
 
