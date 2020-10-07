@@ -1,5 +1,8 @@
 # psy
 
+Приложение psy - SPA для презентации психолога и записи на прием. 
+Написано с использованием технологий Vue, VueRouter, Vuex, Vuetify
+
 ## Project setup
 ```
 npm install
