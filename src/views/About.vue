@@ -143,7 +143,7 @@
             <v-card style="display: flex; justify-content: start; height: fit-content;" hidden>
 
               <v-btn
-                      style="position: fixed; background: rgba(0,0,0,0.6)"
+                      style="position: fixed; align-self: center; background: rgba(0,0,0,0.6)"
                       text
                       @click="dialog = false"
               >

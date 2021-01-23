@@ -1,5 +1,4 @@
 export default {
-    // strict: true,
     // namespace: true,
     state: {
         inputDataOfUser: {
@@ -12,30 +11,29 @@ export default {
         },
     },
     mutations: {
-        updateName (state, name){
+        updateName(state, name) {
             state.inputDataOfUser.name = name
         },
 
-        updateEmail (state, email){
+        updateEmail(state, email) {
             state.inputDataOfUser.email = email
         },
 
-        updatePhone (state, phone){
+        updatePhone(state, phone) {
             state.inputDataOfUser.phone = phone
         },
 
-        updateSelect (state, select){
+        updateSelect(state, select) {
             state.inputDataOfUser.select = select
         },
 
-        updateCommunicate (state, communicate){
+        updateCommunicate(state, communicate) {
             state.inputDataOfUser.communicate = communicate
         },
 
-        updateProblem (state, problem){
+        updateProblem(state, problem) {
             state.inputDataOfUser.problem = problem
         },
-
 
         cleanState(state) {
             state.inputDataOfUser = {
@@ -50,18 +48,19 @@ export default {
     },
     actions: {
         async postDataOfUserAsync({state}) {
-            // запрос на сервак поменять адрес
-            return  await fetch('https://atarasov.ru/api/posts/?access_token=mycSH1GDCTr2daqnxeEdWvde1X5QQ1', {
-                headers: {
-                    'Content-Type': 'application/json;charset=utf-8'
-                },
-                method: 'POST',
-                body: JSON.stringify(state.inputDataOfUser)
-            });
+            // запрос на сервак поменять адрес?
+            await fetch('https://atarasov.ru/api/posts/?access_token=mycSH1GDCTr2daqnxeEdWvde1X5QQ1',
+
+                {
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    method: 'POST',
+                    body: JSON.stringify(state.inputDataOfUser)
+                }
+            );
         },
     },
-    getters: {
-    },
-    modules: {
-    }
+    getters: {},
+    modules: {}
 }
