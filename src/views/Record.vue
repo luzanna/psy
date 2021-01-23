@@ -132,7 +132,52 @@
 
             <!--            <div class="py-12"></div>-->
         </section>
+        <section class="soft-grey">
+            <div class="py-12"></div>
 
+
+            <v-container>
+
+                <h1 class="hidden-sm-and-down display-2 font-weight-bold mb-3 text-uppercase text-center"> Как проходят
+                    консультации </h1>
+
+                <h1 class="hidden-md-and-up display-1 font-weight-bold text-uppercase text-center mb-3"> Как проходят
+                    консультации </h1>
+
+                <v-responsive
+                    class="mx-auto mb-12"
+                    width="50%"
+                >
+                    <v-divider class="mb-1"></v-divider>
+
+                    <v-divider></v-divider>
+                </v-responsive>
+
+                <v-theme-provider light>
+                    <v-responsive
+                        class="mx-auto title font-weight-light mb-8 text-justify"
+                        max-width="720"
+                    >
+
+                        <div ref="hellohello">
+                            <!--              <transition name="slide-fade-up">-->
+                            <!--                <div v-if="hellohello">-->
+
+                            Наши сеансы будут проходить в уютном кабинете или онлайн - на ваш выбор. После встречи или
+                            звонка вы рассказываете, чего
+                            хотите от наших сеансов, я разрабатываю план, в зависимости от вашего запроса и т д.
+                            Дописать еще текста и оформить елочкой(?)
+                            ЦЕНЫ И ТИПЫ УСЛУГ!!!!!!!
+                            <!--                </div>-->
+                            <!--              </transition>-->
+                        </div>
+                    </v-responsive>
+
+                </v-theme-provider>
+            </v-container>
+
+            <div class="py-12"></div>
+        </section>
 
         <section class="overflow-hidden">
             <div class="row accent no-gutters">

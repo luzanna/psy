@@ -46,9 +46,10 @@
                     <div class="v-responsive v-image" style="height: 100vh;">
                         <div class="v-responsive__sizer" style="padding-bottom: 113.125%;"></div>
                         <div class="v-image__image v-image__image--cover image-main"></div>
-                        <div class="v-responsive__content" style="width: 960px; margin: auto auto auto -100%;">
+                        <div class="v-responsive__content"
+                             style="width: 960px; margin: auto auto auto -100%;">
 
-                            <div class="hidden-md-and-up row align-center justify-center">
+                            <div class="hidden-md-and-up row align-center  justify-center">
                                 <div class="col-md-6 text-center">
                                     <!--                      <div class="py-12"></div>-->
 
@@ -68,7 +69,7 @@
                                     </p>
                                     <router-link to="/sign_up"
                                                  class="mt-4 v-btn v-btn--contained v-btn--rounded theme--light v-size--default  text-center">
-                                        <span class="v-btn__content black--text">Записаться</span></router-link>
+                                        <span class="v-btn__content black--text">Записаться на консультацию</span></router-link>
                                     <br/>
                                     <br/>
                                     <v-btn
@@ -97,13 +98,13 @@
                 <!--        <div  ref="firstheader">-->
                 <!--          <div :class="[isActive ? scrollClass : '', activeClass]" v-scroll="showHeader">-->
 
-                <div class='hidden-sm-and-down display-2 font-weight-bold mb-3 text-uppercase text-center'>
-                    Давайте знакомиться
-                </div>
+<!--                <div class='hidden-sm-and-down display-2 font-weight-bold mb-3 text-uppercase text-center'>-->
+<!--                    Давайте знакомиться-->
+<!--                </div>-->
 
-                <div class='hidden-md-and-up display-1 font-weight-bold text-uppercase text-center mb-3'>
-                    Давайте знакомиться
-                </div>
+<!--                <div class='hidden-md-and-up display-1 font-weight-bold text-uppercase text-center mb-3'>-->
+<!--                    Давайте знакомиться-->
+<!--                </div>-->
                 <!--        </div>-->
 
                 <v-responsive
@@ -119,21 +120,25 @@
                     max-width="720"
                 >
                     <div ref="hello">
+
+
+
                         Здравствуйте!
                         <br/>
                         <br/>
                         Меня зовут Мария, я практикующий психолог, психотерапевт.
-                        Провожу индивидуальные консультации для взрослых и подростков с 16 лет.
-                        Помогаю изменить свою жизнь в предпочитаемом направлении.
+
                         <br/>
                         <br/>
-                        В своей работе использую <b>процессуально-ориентированный</b> и <b>нарративный</b> подходы, а
-                        также
-                        интегрирую методы из других терапевтических направлений (<b>пcиходрама</b>, <b>телесно-ориентированная
-                        терапия</b>,
-                        <b>арт-терапия</b>). Подробнее о походах, в которых я работаю, можно почитать
-                        <router-link class="link" to="/about">здесь</router-link>
-                        .
+                        Провожу индивидуальные консультации для взрослых и подростков с 16 лет. Помогаю изменить свою жизнь в предпочитаемом направлении.
+                        <br/>
+                        <br/>
+
+                        В своей работе я использую процессуально-ориентированный  и нарративный подходы, а также интегрирую методы из других терапевтических направлений (пcиходрама, телесно-ориентированная терапия, арт-терапия).
+
+                        <br/>
+                        <br/>
+                        Подробнее о походах, в которых я работаю, можно почитать  <router-link class="link" to="/about">здесь</router-link>.
                     </div>
                 </v-responsive>
 
@@ -158,6 +163,10 @@
           </span>
                     </v-btn>
                 </router-link>
+
+
+
+
 
             </v-container>
 
@@ -187,11 +196,8 @@
                         <div class="col col-12">
 
                             <div class="title font-weight-light mb-5" style="line-height: 1.7 !important;">
-                                Психотерапевт - не эксперт, который даст вам готовый ответ, а, скорее,
-                                проводник, который поможет найти пути решения. Используя метафору, психотерапию
-                                можно сравнить с путешествием по темному, неизведанному лесу: клиент здесь
-                                выступает как «путешественник», главное действующее лицо, а терапевт
-                                только сопровождает его на этом пути.
+                                Для меня психотерапия – это процесс совместного исследования, поиска смыслов, ресурсов, внутренних опор, ценностей, путей для изменений. Это создание безопасного пространства доверительных отношений, которое дает возможность получить новый опыт. Это движение к целостности и осознанию себя. <br/>
+                                Подробнее о том, что для меня значит психотерапия, можно почитать <router-link to="/about">здесь</router-link> .
                             </div>
                         </div>
                     </div>
@@ -199,46 +205,50 @@
             </div>
         </section>
 
-        <!--описание психотерапевта-->
-        <section class="overflow-hidden ">
-            <div class="row accent no-gutters">
+<!--        &lt;!&ndash;описание психотерапевта&ndash;&gt;-->
+<!--        <section class="overflow-hidden ">-->
+<!--            <div class="row accent no-gutters">-->
 
-                <div class="text-center pa-5 col-md-6 col-12 soft-grey">
-                    <div class="row fill-height align-center justify-center">
-                        <div class="col col-12">
+<!--                <div class="text-center pa-5 col-md-6 col-12 soft-grey">-->
+<!--                    <div class="row fill-height align-center justify-center">-->
+<!--                        <div class="col col-12">-->
 
-                            <div class="title font-weight-light mb-5" style="line-height: 1.7 !important;">
-                                Так, шаг за шагом, вместе с психотерапевтом клиент постепенно продвигается вперед к
-                                намеченной цели,
-                                параллельно с этим выстраивая «карту» своего внутреннего мира, чтобы, используя
-                                эту карту и получив необходимые навыки, двигаться самому на пути изменений и
-                                самопознания.
-                                <br/>
-                                <br/>
-                                Подробнее о том, на какие ценности я опираюсь в своей работе, можно почитать
-                                <router-link class="link" to="/about">здесь</router-link>
-                                .
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<!--                            <div class="title font-weight-light mb-5" style="line-height: 1.7 !important;">-->
 
-                <div class=" col-md-6 col">
-                    <div class="v-responsive v-image hidden-md-and-down" style="height: 100%;">
-                        <div class="v-responsive__sizer" style="padding-bottom: 112.5%;"></div>
-                        <div class="v-image__image v-image__image--cover"
-                             style="background-image: url(&quot;pictures/photo_2020-09-15_15-52-04.jpg&quot;); background-position: center center;"></div>
-                        <div class="v-responsive__content" style="width: 960px;"></div>
-                    </div>
-                    <div class="v-responsive v-image hidden-sm-and-up" style="height: 80%;">
-                        <div class="v-responsive__sizer" style="padding-bottom: 112.5%;"></div>
-                        <div class="v-image__image v-image__image--cover"
-                             style="background-image: url(&quot;pictures/photo_2020-09-15_15-52-04.jpg&quot;); background-position: center center;"></div>
-                        <div class="v-responsive__content" style="width: 960px;"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
+
+
+<!--                                &lt;!&ndash;                                Так, шаг за шагом, вместе с психотерапевтом клиент постепенно продвигается вперед к&ndash;&gt;-->
+<!--&lt;!&ndash;                                намеченной цели,&ndash;&gt;-->
+<!--&lt;!&ndash;                                параллельно с этим выстраивая «карту» своего внутреннего мира, чтобы, используя&ndash;&gt;-->
+<!--&lt;!&ndash;                                эту карту и получив необходимые навыки, двигаться самому на пути изменений и&ndash;&gt;-->
+<!--&lt;!&ndash;                                самопознания.&ndash;&gt;-->
+<!--&lt;!&ndash;                                <br/>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <br/>&ndash;&gt;-->
+<!--&lt;!&ndash;                                Подробнее о том, на какие ценности я опираюсь в своей работе, можно почитать&ndash;&gt;-->
+<!--&lt;!&ndash;                                <router-link class="link" to="/about">здесь</router-link>&ndash;&gt;-->
+
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class=" col-md-6 col">-->
+<!--                    <div class="v-responsive v-image hidden-md-and-down" style="height: 100%;">-->
+<!--                        <div class="v-responsive__sizer" style="padding-bottom: 112.5%;"></div>-->
+<!--                        <div class="v-image__image v-image__image&#45;&#45;cover"-->
+<!--                             style="background-image: url(&quot;pictures/photo_2020-09-15_15-52-04.jpg&quot;); background-position: center center;"></div>-->
+<!--                        <div class="v-responsive__content" style="width: 960px;"></div>-->
+<!--                    </div>-->
+<!--                    <div class="v-responsive v-image hidden-sm-and-up" style="height: 80%;">-->
+<!--                        <div class="v-responsive__sizer" style="padding-bottom: 112.5%;"></div>-->
+<!--                        <div class="v-image__image v-image__image&#45;&#45;cover"-->
+<!--                             style="background-image: url(&quot;pictures/photo_2020-09-15_15-52-04.jpg&quot;); background-position: center center;"></div>-->
+<!--                        <div class="v-responsive__content" style="width: 960px;"></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </section>-->
 
 
         <!--ко мне обращаются-->
@@ -416,6 +426,301 @@
         <!--        </section>-->
 
 
+
+
+
+
+
+        <section class="overflow-hidden soft-grey">
+            <div class="py-12"></div>
+
+            <div class="row">
+
+                <h1 class="hidden-sm-and-down display-2 font-weight-bold mb-3 text-uppercase text-center">На какие принципы и ценности я опираюсь: </h1>
+
+                <h1 class="hidden-md-and-up display-1 font-weight-bold text-uppercase text-center mb-3"> На какие принципы и ценности я опираюсь: </h1>
+
+                <div class="text-center pa-5 darken-2--text col-12">
+                    <!--                  <div class="v-sheet theme&#45;&#45;light secondary">-->
+                    <div class="container pa-2 ">
+                        <div class="row">
+
+                            <div class="col-md-4 col-12">
+
+
+                            <v-card
+                                class="mx-auto"
+                                max-width="344"
+                            >
+                                <v-img
+                                    src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+                                    height="200px"
+                                ></v-img>
+
+                                <v-card-title>
+                                    Top western road trips
+                                </v-card-title>
+
+                                <v-card-subtitle>
+                                    1,000 miles of wonder
+                                </v-card-subtitle>
+
+                                <v-card-actions>
+                                    <v-btn
+                                        color="orange lighten-2"
+                                        text
+                                    >
+                                        Explore
+                                    </v-btn>
+
+                                    <v-spacer></v-spacer>
+
+                                    <v-btn
+                                        icon
+                                        @click="show = !show"
+                                    >
+                                        <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                                    </v-btn>
+                                </v-card-actions>
+
+                                <v-expand-transition>
+                                    <div v-show="show">
+                                        <v-divider></v-divider>
+
+                                        <v-card-text>
+                                            I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.
+                                        </v-card-text>
+                                    </div>
+                                </v-expand-transition>
+                            </v-card>
+
+
+
+                            <v-card
+                                class="mx-auto"
+                                max-width="344"
+                            >
+                                <v-img
+                                    src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+                                    height="200px"
+                                ></v-img>
+
+                                <v-card-title>
+                                    Top western road trips
+                                </v-card-title>
+
+                                <v-card-subtitle>
+                                    1,000 miles of wonder
+                                </v-card-subtitle>
+
+                                <v-card-actions>
+                                    <v-btn
+                                        color="orange lighten-2"
+                                        text
+                                    >
+                                        Explore
+                                    </v-btn>
+
+                                    <v-spacer></v-spacer>
+
+                                    <v-btn
+                                        icon
+                                        @click="show = !show"
+                                    >
+                                        <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                                    </v-btn>
+                                </v-card-actions>
+
+                                <v-expand-transition>
+                                    <div v-show="show">
+                                        <v-divider></v-divider>
+
+                                        <v-card-text>
+                                            I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.
+                                        </v-card-text>
+                                    </div>
+                                </v-expand-transition>
+                            </v-card>
+
+                            <v-card
+                                class="mx-auto"
+                                max-width="344"
+                            >
+                                <v-img
+                                    src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+                                    height="200px"
+                                ></v-img>
+
+                                <v-card-title>
+                                    Top western road trips
+                                </v-card-title>
+
+                                <v-card-subtitle>
+                                    1,000 miles of wonder
+                                </v-card-subtitle>
+
+                                <v-card-actions>
+                                    <v-btn
+                                        color="orange lighten-2"
+                                        text
+                                    >
+                                        Explore
+                                    </v-btn>
+
+                                    <v-spacer></v-spacer>
+
+                                    <v-btn
+                                        icon
+                                        @click="show = !show"
+                                    >
+                                        <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                                    </v-btn>
+                                </v-card-actions>
+
+                                <v-expand-transition>
+                                    <div v-show="show">
+                                        <v-divider></v-divider>
+
+                                        <v-card-text>
+                                            I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.
+                                        </v-card-text>
+                                    </div>
+                                </v-expand-transition>
+                            </v-card>
+
+
+                            <v-card
+                                class="mx-auto"
+                                max-width="344"
+                            >
+                                <v-img
+                                    src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+                                    height="200px"
+                                ></v-img>
+
+                                <v-card-title>
+                                    Top western road trips
+                                </v-card-title>
+
+                                <v-card-subtitle>
+                                    1,000 miles of wonder
+                                </v-card-subtitle>
+
+                                <v-card-actions>
+                                    <v-btn
+                                        color="orange lighten-2"
+                                        text
+                                    >
+                                        Explore
+                                    </v-btn>
+
+                                    <v-spacer></v-spacer>
+
+                                    <v-btn
+                                        icon
+                                        @click="show = !show"
+                                    >
+                                        <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                                    </v-btn>
+                                </v-card-actions>
+
+                                <v-expand-transition>
+                                    <div v-show="show">
+                                        <v-divider></v-divider>
+
+                                        <v-card-text>
+                                            I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.
+                                        </v-card-text>
+                                    </div>
+                                </v-expand-transition>
+                            </v-card>
+
+
+
+                            </div>
+
+
+
+
+<!--                            <div class="col-md-4 col-12" v-for="({title, text }, i) in steps"-->
+<!--                                 :key="i">-->
+<!--                                <div class="v-responsive v-image"-->
+<!--                                     style="height: 300px; background: rgba(33,33,33,0.7); margin: auto; border: 2px solid #eeeeee">-->
+<!--                                    <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>-->
+<!--                                    <div :class="'v-image__image v-image__image&#45;&#45;cover card' + (i + 1)"></div>-->
+<!--                                    <div class="v-responsive__content  font-weight-bold " style="width: 100%; height: 100%; color: #030303;-->
+<!--                                                                                                              display: flex; justify-content: center; flex-direction: column; background: rgba(255,255,255,0.6)">-->
+<!--                                        <div class="text-uppercase pa-1" v-text="title"></div>-->
+<!--                                        <div class="font-weight-regular mt-3 pa-2"-->
+<!--                                             style="max-width: 90%; align-self: center; background: rgba(255,255,255,0.6); border: 2px solid #343434"-->
+<!--                                        >Никогда не удается достичь совершенства, поэтому всвы-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+
+                            <!--                            <div class="col-md-3 col-12"-->
+                            <!--                                 v-for="({title, text }, i) in steps"-->
+                            <!--                                 :key="i">-->
+                            <!--                                <div class="v-responsive v-image"-->
+                            <!--                                     style="height: 300px;  background: rgba(33,33,33,0.7); margin: auto; border: 2px solid #eeeeee">-->
+                            <!--                                    <div class="v-responsive__sizer" style="padding-bottom: 99.9727%;"></div>-->
+                            <!--&lt;!&ndash;                                    background from src&ndash;&gt;-->
+                            <!--                                    <div :class="'v-image__image v-image__image&#45;&#45;cover card' + (i + 1)"></div>-->
+
+                            <!--                                    <div class="v-responsive__content font-weight-bold text-uppercase" style="width: 100%; height: 100%; color: #000000; background: rgba(255,255,255,0.6);-->
+                            <!--                                        display: flex; justify-content: center; align-self: center; flex-direction: column">-->
+                            <!--                                        <div class="pa-2" v-text="title"-->
+                            <!--                                             style="max-width: 90%; align-self: center; background: rgba(255,255,255,0.6); border: 2px solid #343434">-->
+                            <!--&lt;!&ndash;                                            style="max-width: 90%; align-self: center; background: rgba(207,177,173,0.6); border: 2px solid #343434">&ndash;&gt;-->
+                            <!--&lt;!&ndash;                                            style="max-width: 90%; align-self: center; background: rgba(173,207,174,0.6); border: 2px solid #343434">&ndash;&gt;-->
+                            <!--                                        </div>-->
+                            <!--                                    </div>-->
+                            <!--                                </div>-->
+                            <!--                            </div>-->
+
+
+                            <!--                            <div class="col-md-3 col-12"-->
+                            <!--                                 v-for="({ src, text, title }, i) in articles"-->
+                            <!--                                 :key="i"-->
+                            <!--                            >-->
+                            <!--                                <div class="v-responsive v-image"-->
+                            <!--                                     style="height: 300px; background: rgba(33,33,33,0.7);  margin: auto; border: 2px solid #eeeeee">-->
+                            <!--                                    <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>-->
+                            <!--                                    <div class="v-image__image v-image__image&#45;&#45;cover"-->
+                            <!--                                         style="background-image: url(&quot;https://freelancer-free.johnleider.com/img/project3.914df552.jpeg&quot;); background-position: center center;"></div>-->
+                            <!--                                    <div class="v-responsive__content  font-weight-bold " style="width: 100%; height: 100%; color: #eeeeee;-->
+                            <!--                                                                          display: flex; justify-content: center; flex-direction: column; background: rgba(33,33,33,0.59)">-->
+                            <!--                                        <div class="text-uppercase" v-text="title"></div>-->
+                            <!--                                        <div class="font-weight-regular mt-3 pa-2"-->
+                            <!--                                             v-text="text"-->
+                            <!--                                             style="max-width: 90%; align-self: center; background: rgba(0,0,0,0.4); border: 2px solid #ffffff"-->
+                            <!--                                        ></div>-->
+                            <!--                                    </div>-->
+                            <!--                                </div>-->
+                            <!--                            </div>-->
+                        </div>
+                        <!--                  </div>-->
+                    </div>
+                </div>
+
+
+<!--                <v-responsive-->
+<!--                    class="mx-auto title font-weight-light mb-8 pt-2 text-center white"-->
+<!--                >-->
+<!--                    Если Вы хотите обратиться с другой темой – все равно приходите, <br/>постараемся вместе найти-->
+<!--                    пути решения Вашей проблемы.-->
+<!--                </v-responsive>-->
+            </div>
+
+        </section>
+
+
+
+
+
+
         <section class="overflow-hidden">
             <div class="py-12"></div>
 
@@ -578,308 +883,263 @@
 
 
         <!--      right-->
-        <!--desktop-->
-        <v-carousel
-            :continuous="true"
-            :cycle="cycle"
-            :interval="4000"
-            :show-arrows-on-hover="true"
-            :vertical="true"
-            hide-delimiter-background
-            delimiter-icon="mdi-circle-medium"
-            height="100vh"
-            class="image hidden-sm-and-down shadow-slider-right"
-            style=" "
+<!--        &lt;!&ndash;desktop&ndash;&gt;-->
+<!--        <v-carousel-->
+<!--            :continuous="true"-->
+<!--            :cycle="cycle"-->
+<!--            :interval="4000"-->
+<!--            :show-arrows-on-hover="true"-->
+<!--            :vertical="true"-->
+<!--            hide-delimiter-background-->
+<!--            delimiter-icon="mdi-circle-medium"-->
+<!--            height="100vh"-->
+<!--            class="image hidden-sm-and-down shadow-slider-right"-->
+<!--            style=" "-->
 
-        >
-            <!--              <v-carousel-item-->
-            <!--                      v-for="(slide, i) in slides"-->
-            <!--                      :key="i"-->
-            <!--              >-->
-            <v-carousel-item
-                v-for="({text, title }, i) in steps"
-                :key="i"
-            >
-                <!--                  <v-sheet-->
-                <!--                          :color="colors[i]"-->
-                <!--                          height="100%"-->
-                <!--                          tile-->
-                <!--                          class="image"-->
-                <!--                          style=" box-shadow: -50vw 0 200px -20px rgba(0,0,0,0.8) inset; width: 100vw; background: none"-->
+<!--        >-->
+<!--            &lt;!&ndash;              <v-carousel-item&ndash;&gt;-->
+<!--            &lt;!&ndash;                      v-for="(slide, i) in slides"&ndash;&gt;-->
+<!--            &lt;!&ndash;                      :key="i"&ndash;&gt;-->
+<!--            &lt;!&ndash;              >&ndash;&gt;-->
+<!--            <v-carousel-item-->
+<!--                v-for="({text, title }, i) in steps"-->
+<!--                :key="i"-->
+<!--            >-->
+<!--                &lt;!&ndash;                  <v-sheet&ndash;&gt;-->
+<!--                &lt;!&ndash;                          :color="colors[i]"&ndash;&gt;-->
+<!--                &lt;!&ndash;                          height="100%"&ndash;&gt;-->
+<!--                &lt;!&ndash;                          tile&ndash;&gt;-->
+<!--                &lt;!&ndash;                          class="image"&ndash;&gt;-->
+<!--                &lt;!&ndash;                          style=" box-shadow: -50vw 0 200px -20px rgba(0,0,0,0.8) inset; width: 100vw; background: none"&ndash;&gt;-->
 
-                <!--                  >-->
-                <v-sheet
-                    height="100%"
-                    tile
-                    class="image align-content-slider-right"
-                    style=""
+<!--                &lt;!&ndash;                  >&ndash;&gt;-->
+<!--                <v-sheet-->
+<!--                    height="100%"-->
+<!--                    tile-->
+<!--                    class="image align-content-slider-right"-->
+<!--                    style=""-->
 
-                >
-                    <!--                      <v-row-->
-                    <!--                              class="fill-height"-->
-                    <!--                              max-width="50%"-->
-                    <!--                              align="center"-->
-                    <!--                              justify="center"-->
-                    <!--                      >-->
-                    <!--                          <div class="display-3">{{ title }}-->
+<!--                >-->
+<!--                    &lt;!&ndash;                      <v-row&ndash;&gt;-->
+<!--                    &lt;!&ndash;                              class="fill-height"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                              max-width="50%"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                              align="center"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                              justify="center"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                      >&ndash;&gt;-->
+<!--                    &lt;!&ndash;                          <div class="display-3">{{ title }}&ndash;&gt;-->
 
-                    <v-card
-                        outlined
-                        max-width="400"
-                        class="card-decor"
-                        style=""
-                    >
-                        <v-card-title class="font-weight-bold display-1 mt-3 text-right"
-                                      v-text="title">
-                        </v-card-title>
-                        <v-card-text class="text-right"
-                                     v-text="text">
-                        </v-card-text>
-                    </v-card>
+<!--                    <v-card-->
+<!--                        outlined-->
+<!--                        max-width="400"-->
+<!--                        class="card-decor"-->
+<!--                        style=""-->
+<!--                    >-->
+<!--                        <v-card-title class="font-weight-bold display-1 mt-3 text-right"-->
+<!--                                      v-text="title">-->
+<!--                        </v-card-title>-->
+<!--                        <v-card-text class="text-right"-->
+<!--                                     v-text="text">-->
+<!--                        </v-card-text>-->
+<!--                    </v-card>-->
 
-                    <!--                          </div>-->
-                    <!--                      </v-row>-->
-                </v-sheet>
-            </v-carousel-item>
-        </v-carousel>
-        <!--mobile-->
-        <v-carousel
-            :continuous="true"
-            :cycle="cycle"
-            :interval="4000"
-            :show-arrows-on-hover="true"
-            :vertical="true"
-            hide-delimiter-background
-            delimiter-icon="mdi-circle-medium"
-            height="100vh"
-            class="image hidden-md-and-up shadow-slider-right"
-            style=""
+<!--                    &lt;!&ndash;                          </div>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                      </v-row>&ndash;&gt;-->
+<!--                </v-sheet>-->
+<!--            </v-carousel-item>-->
+<!--        </v-carousel>-->
+<!--        &lt;!&ndash;mobile&ndash;&gt;-->
+<!--        <v-carousel-->
+<!--            :continuous="true"-->
+<!--            :cycle="cycle"-->
+<!--            :interval="4000"-->
+<!--            :show-arrows-on-hover="true"-->
+<!--            :vertical="true"-->
+<!--            hide-delimiter-background-->
+<!--            delimiter-icon="mdi-circle-medium"-->
+<!--            height="100vh"-->
+<!--            class="image hidden-md-and-up shadow-slider-right"-->
+<!--            style=""-->
 
-        >
-            <!--              <v-carousel-item-->
-            <!--                      v-for="(slide, i) in slides"-->
-            <!--                      :key="i"-->
-            <!--              >-->
-            <v-carousel-item
-                v-for="({text, title }, i) in steps"
-                :key="i"
-            >
-                <!--                  <v-sheet-->
-                <!--                          :color="colors[i]"-->
-                <!--                          height="100%"-->
-                <!--                          tile-->
-                <!--                          class="image"-->
-                <!--                          style=" box-shadow: -50vw 0 200px -20px rgba(0,0,0,0.8) inset; width: 100vw; background: none"-->
+<!--        >-->
+<!--            &lt;!&ndash;              <v-carousel-item&ndash;&gt;-->
+<!--            &lt;!&ndash;                      v-for="(slide, i) in slides"&ndash;&gt;-->
+<!--            &lt;!&ndash;                      :key="i"&ndash;&gt;-->
+<!--            &lt;!&ndash;              >&ndash;&gt;-->
+<!--            <v-carousel-item-->
+<!--                v-for="({text, title }, i) in steps"-->
+<!--                :key="i"-->
+<!--            >-->
+<!--                &lt;!&ndash;                  <v-sheet&ndash;&gt;-->
+<!--                &lt;!&ndash;                          :color="colors[i]"&ndash;&gt;-->
+<!--                &lt;!&ndash;                          height="100%"&ndash;&gt;-->
+<!--                &lt;!&ndash;                          tile&ndash;&gt;-->
+<!--                &lt;!&ndash;                          class="image"&ndash;&gt;-->
+<!--                &lt;!&ndash;                          style=" box-shadow: -50vw 0 200px -20px rgba(0,0,0,0.8) inset; width: 100vw; background: none"&ndash;&gt;-->
 
-                <!--                  >-->
-                <v-sheet
-                    height="100%"
-                    tile
-                    class="image align-content-slider-right"
-                    style=""
+<!--                &lt;!&ndash;                  >&ndash;&gt;-->
+<!--                <v-sheet-->
+<!--                    height="100%"-->
+<!--                    tile-->
+<!--                    class="image align-content-slider-right"-->
+<!--                    style=""-->
 
-                >
-                    <!--                      <v-row-->
-                    <!--                              class="fill-height"-->
-                    <!--                              max-width="50%"-->
-                    <!--                              align="center"-->
-                    <!--                              justify="center"-->
-                    <!--                      >-->
-                    <!--                          <div class="display-3">{{ title }}-->
+<!--                >-->
+<!--                    &lt;!&ndash;                      <v-row&ndash;&gt;-->
+<!--                    &lt;!&ndash;                              class="fill-height"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                              max-width="50%"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                              align="center"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                              justify="center"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                      >&ndash;&gt;-->
+<!--                    &lt;!&ndash;                          <div class="display-3">{{ title }}&ndash;&gt;-->
 
-                    <v-card
-                        class="card-decor card-decor-mobile-right"
-                        outlined
-                        max-width="300px"
-                        style=""
-                    >
-                        <v-card-title class="font-weight-bold display-0 mt-3 text-right"
-                                      v-text="title"></v-card-title>
-                        <v-card-text class="text-right"
-                                     v-text="text"></v-card-text>
-                    </v-card>
+<!--                    <v-card-->
+<!--                        class="card-decor card-decor-mobile-right"-->
+<!--                        outlined-->
+<!--                        max-width="300px"-->
+<!--                        style=""-->
+<!--                    >-->
+<!--                        <v-card-title class="font-weight-bold display-0 mt-3 text-right"-->
+<!--                                      v-text="title"></v-card-title>-->
+<!--                        <v-card-text class="text-right"-->
+<!--                                     v-text="text"></v-card-text>-->
+<!--                    </v-card>-->
 
-                    <!--                          </div>-->
-                    <!--                      </v-row>-->
-                </v-sheet>
-            </v-carousel-item>
-        </v-carousel>
+<!--                    &lt;!&ndash;                          </div>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                      </v-row>&ndash;&gt;-->
+<!--                </v-sheet>-->
+<!--            </v-carousel-item>-->
+<!--        </v-carousel>-->
 
         <!--как проходят консультации-->
-        <section class="soft-grey">
-            <div class="py-12"></div>
 
 
-            <v-container>
 
-                <h1 class="hidden-sm-and-down display-2 font-weight-bold mb-3 text-uppercase text-center"> Как проходят
-                    консультации </h1>
+<!--        &lt;!&ndash;      left&ndash;&gt;-->
+<!--        &lt;!&ndash;desktop&ndash;&gt;-->
+<!--        <v-carousel-->
+<!--            :continuous="true"-->
+<!--            :cycle="cycle"-->
+<!--            :interval="4000"-->
+<!--            :show-arrows-on-hover="true"-->
+<!--            :vertical="false"-->
+<!--            hide-delimiter-background-->
+<!--            delimiter-icon="mdi-circle-medium"-->
+<!--            height="100vh"-->
+<!--            class="image hidden-sm-and-down shadow-slider-left"-->
+<!--            style=""-->
 
-                <h1 class="hidden-md-and-up display-1 font-weight-bold text-uppercase text-center mb-3"> Как проходят
-                    консультации </h1>
+<!--        >-->
+<!--            &lt;!&ndash;              <v-carousel-item&ndash;&gt;-->
+<!--            &lt;!&ndash;                      v-for="(slide, i) in slides"&ndash;&gt;-->
+<!--            &lt;!&ndash;                      :key="i"&ndash;&gt;-->
+<!--            &lt;!&ndash;              >&ndash;&gt;-->
+<!--            <v-carousel-item-->
+<!--                v-for="({text, title }, i) in steps"-->
+<!--                :key="i"-->
+<!--            >-->
+<!--                &lt;!&ndash;                  <v-sheet&ndash;&gt;-->
+<!--                &lt;!&ndash;                          :color="colors[i]"&ndash;&gt;-->
+<!--                &lt;!&ndash;                          height="100%"&ndash;&gt;-->
+<!--                &lt;!&ndash;                          tile&ndash;&gt;-->
+<!--                &lt;!&ndash;                          class="image"&ndash;&gt;-->
+<!--                &lt;!&ndash;                          style=" box-shadow: -50vw 0 200px -20px rgba(0,0,0,0.8) inset; width: 100vw; background: none"&ndash;&gt;-->
 
-                <v-responsive
-                    class="mx-auto mb-12"
-                    width="50%"
-                >
-                    <v-divider class="mb-1"></v-divider>
+<!--                &lt;!&ndash;                  >&ndash;&gt;-->
+<!--                <v-sheet-->
+<!--                    height="100%"-->
+<!--                    tile-->
+<!--                    class="image align-content-slider-left"-->
+<!--                    style=""-->
 
-                    <v-divider></v-divider>
-                </v-responsive>
+<!--                >-->
+<!--                    &lt;!&ndash;                      <v-row&ndash;&gt;-->
+<!--                    &lt;!&ndash;                              class="fill-height"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                              max-width="50%"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                              align="center"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                              justify="center"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                      >&ndash;&gt;-->
+<!--                    &lt;!&ndash;                          <div class="display-3">{{ title }}&ndash;&gt;-->
 
-                <v-theme-provider light>
-                    <v-responsive
-                        class="mx-auto title font-weight-light mb-8 text-justify"
-                        max-width="720"
-                    >
+<!--                    <v-card-->
+<!--                        class="card-decor-left"-->
+<!--                        outlined-->
+<!--                        max-width="400"-->
+<!--                        style=""-->
+<!--                    >-->
+<!--                        <v-card-title class="font-weight-bold display-1 mt-3 text-left"-->
+<!--                                      v-text="title">-->
+<!--                        </v-card-title>-->
+<!--                        <v-card-text class="text-left"-->
+<!--                                     v-text="text">-->
+<!--                        </v-card-text>-->
+<!--                    </v-card>-->
 
-                        <div ref="hellohello">
-                            <!--              <transition name="slide-fade-up">-->
-                            <!--                <div v-if="hellohello">-->
+<!--                    &lt;!&ndash;                          </div>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                      </v-row>&ndash;&gt;-->
+<!--                </v-sheet>-->
+<!--            </v-carousel-item>-->
+<!--        </v-carousel>-->
+<!--        &lt;!&ndash;mobile&ndash;&gt;-->
+<!--        <v-carousel-->
+<!--            :continuous="true"-->
+<!--            :cycle="cycle"-->
+<!--            :interval="4000"-->
+<!--            :show-arrows-on-hover="true"-->
+<!--            :vertical="false"-->
+<!--            hide-delimiter-background-->
+<!--            delimiter-icon="mdi-circle-medium"-->
+<!--            height="100vh"-->
+<!--            class="image hidden-md-and-up shadow-slider-left"-->
+<!--            style=" "-->
 
-                            Наши сеансы будут проходить в уютном кабинете или онлайн - на ваш выбор. После встречи или
-                            звонка вы рассказываете, чего
-                            хотите от наших сеансов, я разрабатываю план, в зависимости от вашего запроса и т д.
-                            Дописать еще текста и оформить елочкой(?)
-                            ЦЕНЫ И ТИПЫ УСЛУГ!!!!!!!
-                            <!--                </div>-->
-                            <!--              </transition>-->
-                        </div>
-                    </v-responsive>
+<!--        >-->
+<!--            &lt;!&ndash;              <v-carousel-item&ndash;&gt;-->
+<!--            &lt;!&ndash;                      v-for="(slide, i) in slides"&ndash;&gt;-->
+<!--            &lt;!&ndash;                      :key="i"&ndash;&gt;-->
+<!--            &lt;!&ndash;              >&ndash;&gt;-->
+<!--            <v-carousel-item-->
+<!--                v-for="({text, title }, i) in steps"-->
+<!--                :key="i"-->
+<!--            >-->
+<!--                &lt;!&ndash;                  <v-sheet&ndash;&gt;-->
+<!--                &lt;!&ndash;                          :color="colors[i]"&ndash;&gt;-->
+<!--                &lt;!&ndash;                          height="100%"&ndash;&gt;-->
+<!--                &lt;!&ndash;                          tile&ndash;&gt;-->
+<!--                &lt;!&ndash;                          class="image"&ndash;&gt;-->
+<!--                &lt;!&ndash;                          style=" box-shadow: -50vw 0 200px -20px rgba(0,0,0,0.8) inset; width: 100vw; background: none"&ndash;&gt;-->
 
-                </v-theme-provider>
-            </v-container>
+<!--                &lt;!&ndash;                  >&ndash;&gt;-->
+<!--                <v-sheet-->
+<!--                    height="100%"-->
+<!--                    tile-->
+<!--                    class="image align-content-slider-left"-->
+<!--                >-->
+<!--                    &lt;!&ndash;                      <v-row&ndash;&gt;-->
+<!--                    &lt;!&ndash;                              class="fill-height"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                              max-width="50%"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                              align="center"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                              justify="center"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                      >&ndash;&gt;-->
+<!--                    &lt;!&ndash;                          <div class="display-3">{{ title }}&ndash;&gt;-->
 
-            <div class="py-12"></div>
-        </section>
+<!--                    <v-card-->
+<!--                        class="card-decor card-decor-mobile-left"-->
+<!--                        outlined-->
+<!--                        max-width="300px"-->
+<!--                    >-->
+<!--                        <v-card-title class="font-weight-bold mt-3 display-0 text-left"-->
+<!--                                      v-text="title">-->
+<!--                        </v-card-title>-->
+<!--                        <v-card-text class="text-left"-->
+<!--                                     v-text="text">-->
+<!--                        </v-card-text>-->
+<!--                    </v-card>-->
 
-
-        <!--      left-->
-        <!--desktop-->
-        <v-carousel
-            :continuous="true"
-            :cycle="cycle"
-            :interval="4000"
-            :show-arrows-on-hover="true"
-            :vertical="false"
-            hide-delimiter-background
-            delimiter-icon="mdi-circle-medium"
-            height="100vh"
-            class="image hidden-sm-and-down shadow-slider-left"
-            style=""
-
-        >
-            <!--              <v-carousel-item-->
-            <!--                      v-for="(slide, i) in slides"-->
-            <!--                      :key="i"-->
-            <!--              >-->
-            <v-carousel-item
-                v-for="({text, title }, i) in steps"
-                :key="i"
-            >
-                <!--                  <v-sheet-->
-                <!--                          :color="colors[i]"-->
-                <!--                          height="100%"-->
-                <!--                          tile-->
-                <!--                          class="image"-->
-                <!--                          style=" box-shadow: -50vw 0 200px -20px rgba(0,0,0,0.8) inset; width: 100vw; background: none"-->
-
-                <!--                  >-->
-                <v-sheet
-                    height="100%"
-                    tile
-                    class="image align-content-slider-left"
-                    style=""
-
-                >
-                    <!--                      <v-row-->
-                    <!--                              class="fill-height"-->
-                    <!--                              max-width="50%"-->
-                    <!--                              align="center"-->
-                    <!--                              justify="center"-->
-                    <!--                      >-->
-                    <!--                          <div class="display-3">{{ title }}-->
-
-                    <v-card
-                        class="card-decor-left"
-                        outlined
-                        max-width="400"
-                        style=""
-                    >
-                        <v-card-title class="font-weight-bold display-1 mt-3 text-left"
-                                      v-text="title">
-                        </v-card-title>
-                        <v-card-text class="text-left"
-                                     v-text="text">
-                        </v-card-text>
-                    </v-card>
-
-                    <!--                          </div>-->
-                    <!--                      </v-row>-->
-                </v-sheet>
-            </v-carousel-item>
-        </v-carousel>
-        <!--mobile-->
-        <v-carousel
-            :continuous="true"
-            :cycle="cycle"
-            :interval="4000"
-            :show-arrows-on-hover="true"
-            :vertical="false"
-            hide-delimiter-background
-            delimiter-icon="mdi-circle-medium"
-            height="100vh"
-            class="image hidden-md-and-up shadow-slider-left"
-            style=" "
-
-        >
-            <!--              <v-carousel-item-->
-            <!--                      v-for="(slide, i) in slides"-->
-            <!--                      :key="i"-->
-            <!--              >-->
-            <v-carousel-item
-                v-for="({text, title }, i) in steps"
-                :key="i"
-            >
-                <!--                  <v-sheet-->
-                <!--                          :color="colors[i]"-->
-                <!--                          height="100%"-->
-                <!--                          tile-->
-                <!--                          class="image"-->
-                <!--                          style=" box-shadow: -50vw 0 200px -20px rgba(0,0,0,0.8) inset; width: 100vw; background: none"-->
-
-                <!--                  >-->
-                <v-sheet
-                    height="100%"
-                    tile
-                    class="image align-content-slider-left"
-                >
-                    <!--                      <v-row-->
-                    <!--                              class="fill-height"-->
-                    <!--                              max-width="50%"-->
-                    <!--                              align="center"-->
-                    <!--                              justify="center"-->
-                    <!--                      >-->
-                    <!--                          <div class="display-3">{{ title }}-->
-
-                    <v-card
-                        class="card-decor card-decor-mobile-left"
-                        outlined
-                        max-width="300px"
-                    >
-                        <v-card-title class="font-weight-bold mt-3 display-0 text-left"
-                                      v-text="title">
-                        </v-card-title>
-                        <v-card-text class="text-left"
-                                     v-text="text">
-                        </v-card-text>
-                    </v-card>
-
-                    <!--                          </div>-->
-                    <!--                      </v-row>-->
-                </v-sheet>
-            </v-carousel-item>
-        </v-carousel>
+<!--                    &lt;!&ndash;                          </div>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                      </v-row>&ndash;&gt;-->
+<!--                </v-sheet>-->
+<!--            </v-carousel-item>-->
+<!--        </v-carousel>-->
 
 
         <Footer/>
@@ -912,6 +1172,11 @@ export default {
     // },
     data() {
         return {
+
+            reveal: false,
+
+            show: false,
+
 
             colors: [
                 'green',
@@ -1354,6 +1619,21 @@ export default {
 {
     opacity: 0;
 }
+
+
+
+
+
+
+
+.v-card--reveal {
+    bottom: 0;
+    opacity: 1 !important;
+    position: absolute;
+    width: 100%;
+}
+
+
 
 
 </style>
